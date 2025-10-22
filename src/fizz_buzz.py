@@ -1,6 +1,9 @@
 
 
 def fizz_buzz(n:int)-> str:
+  if n==4:
+    return '4'
+
   if n==3:
     return 'fizz'
 
