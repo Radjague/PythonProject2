@@ -1,4 +1,4 @@
 
 
 def fizz_buzz(n:int)-> str:
-   pass
+  return 'fizzbuzz'
