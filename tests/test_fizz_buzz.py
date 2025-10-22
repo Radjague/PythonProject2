@@ -6,3 +6,6 @@ def test_0_returns_fizz_buzz():
 
 def test_1_returns_1():
     assert fizz_buzz(1) == '1'
+
+def test_2_returns_2():
+    assert fizz_buzz(2) == '2'
