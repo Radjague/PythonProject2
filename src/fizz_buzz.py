@@ -1,7 +1,7 @@
 
 
 def fizz_buzz(n:int)-> str:
-  if n == 0 or n == 15 or n==30:
+  if n % 3==0 and n % 5==0:
     return 'fizzbuzz'
   if n % 5==0:
     return 'buzz'
