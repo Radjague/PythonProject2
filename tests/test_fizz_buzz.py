@@ -1,11 +1,9 @@
+import pytest
+
 from src.fizz_buzz import fizz_buzz
 
+@pytest.mark.parametrize('n,expected_result', [(0,'fizzbuzz'), (1,'1'), (2,'2')])
 
-def test_0_returns_fizz_buzz():
-    assert fizz_buzz(0) == 'fizzbuzz'
-
-def test_1_returns_1():
-    assert fizz_buzz(1) == '1'
-
-def test_2_returns_2():
-    assert fizz_buzz(2) == '2'
+def test_n_returns_expected_result(n,expected_result):
+     actual_result = fizz_buzz(n)
+     assert actual_result == expected_result
